@@ -12,4 +12,6 @@ To make the web app run do:
 
 This should work (it worked for us somehow). But something might be different for your pc.
 
+E/R diagram is given in the folder "/attachments" as well as a couple of screen shots from our web app, in case you can't make it run.
+
 The web app is based on the Green Groceries example given in class.
