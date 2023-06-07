@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% from "components/macros.html" import cta_button %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+
+{% block content %}
+<h2><marquee behavior="scroll" direction="left">🥜 DIS NUTZ 🥜</marquee></h2>
+<div class="home">
+        
+        <section class="home__hero">
+            
+            <div class="hero__left">
+                <h1>
+                    If you like DIS, you might like DIS Nutz
+                </h1>
+                <p>
+                    In nature's hands, a treasure lies,
+                    A bite-sized bounty in nutty guise.
+                    Crack open shells, discover the prize,
+                    Nourishing souls, a healthful surprise.
+
+                    Packed with nutrients, they're nature's treat,
+                    Protein, fiber, and healthy fat meet.
+                    Boosting energy, keeping hearts fleet,
+                    Nuts are the fuel that makes wellness complete.
+
+                    From almonds to walnuts, a varied blend,
+                    Each nut a gift, nature did send.
+                    Snack on their goodness, oh, don't pretend,
+                    For vibrant health, nuts are a friend.
+                </p>
+
+                {{ cta_button('btn--large') }}
+
+            </div>
+            <div class="hero__right">
+                <img src="{{ url_for('static', filename='images/hero.jpg') }}" alt="hero" class="hero__img">
+            </div>
+        </section>
+
+        <section class="home__info">
+            <h2 class="home__title">
+                The nutz for your DIS
+            </h2>
+            <div>
+                <div class="info__text">
+                    <h3>Poem 1: "Fiery Almonds"
+                    </h3>
+                    <p>
+                        Almonds ignite, a spicy blaze,
+                        Tantalizing tongues in fiery craze.
+                        Burning heat with a touch of delight,
+                        These nuts command, demanding bite.
+
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/produce1.jpg') }}" alt="produce">
+            </div>
+            <div>
+                <div class="info__text">
+                    <h3>Poem 2: "Rebellious Pecans"</h3>
+                    <p>
+                        Pecans rebel with a fiery zest,
+                        Defying norms, they put taste to the test.
+                        Spicy rebellion in every chew,
+                        These nuts dare you to embrace something new.
+
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/produce2.jpg') }}" alt="produce">
+            </div>
+            <div>
+                <div class="info__text">
+                    <h3>Poem 3: "Walnut Inferno"</h3>
+                    <p>
+                        Walnuts ablaze, a sizzling sensation,
+                        Flames of spice, a nutty temptation.
+                        Inferno unleashed upon the tongue,
+                        Walnuts ignite, a fiery song sung.
+
+                    </p>
+                </div>
+                <img src="{{ url_for('static', filename='images/produce3.jpg') }}" alt="produce">
+            </div>
+
+            <h2 class="home__title">
+                Come shop with us
+            </h2>
+            <div>
+                <div class="info__text">
+                    <h3>Poem 4: "The Nutty Duel"</h3>
+                    <p>
+                        Two nuts clash, a duel unfolds,
+                        Pecan's strength, almond's finesse bold.
+                        Crunch and munch, a battle untamed,
+                        Flavors mingle, victory unnamed.
+
+                    </p>
+
+                    {{ cta_button('btn--large') }}
+                </div>
+                <img src="{{ url_for('static', filename='images/produce4.jpg') }}" alt="produce">
+            </div>
+        </section>
+    </div>
+{% endblock %}
